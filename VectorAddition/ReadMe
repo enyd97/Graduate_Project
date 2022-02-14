@@ -1,3 +1,6 @@
 how to compile kernel code :
 dpu-upmem-dpurte-clang -DNR_TASKELTS='number of taskelts' -o vectorkernel vectorkernel.c
 parameter in vector_addition.h must be same with above 'number of taskelts'
+
+how to compile host code :
+just make it
