@@ -86,4 +86,8 @@ int main(){
         k++;
     }
     printf("\n");
+
+    DPU_ASSERT(dpu_free(dpu_set));
+    free(bufferA);
+    free(bufferB);
 }
