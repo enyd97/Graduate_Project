@@ -2,7 +2,7 @@
 #include <stdint.h>
 
 #define T int32_t
-#define NR_TASKLETS 2
+#define NR_TASKLETS 1
 
 typedef struct {
     uint32_t size;

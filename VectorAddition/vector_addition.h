@@ -5,3 +5,6 @@
 #define NR_ELEMENTS 32   //number of elements
 #define NR_DPUS 4
 #define NR_TASKLETS 2
+typedef struct {
+    uint32_t size;
+} dpu_arguments_t;
