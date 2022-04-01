@@ -69,7 +69,7 @@ int main(){
     DPU_FOREACH(dpu_set, dpu, i){
         DPU_ASSERT(dpu_prepare_xfer(dpu, bufferB + input_size_dpu * i / sizeof(T)));
     }
-    DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, input_size_dpu, input_size_dpu * sizeof(T), DPU_XFER_DEFAULT));
+    DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, input_size_dpu, input_size_dpu, DPU_XFER_DEFAULT));
     printf("check point3\n");
     DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
 

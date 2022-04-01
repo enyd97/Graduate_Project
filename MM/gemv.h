@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#define T int32_t
+#define T int64_t
+#define NR_DPUS 16
 #define NR_TASKLETS 1
-
 typedef struct {
-    uint32_t size;
-    uint32_t row;
-    uint32_t col;
+    unsigned m_size;
+    unsigned n_size;
 } dpu_arguments_t;
