@@ -2,12 +2,12 @@
 #include <dpu.h>
 #include <assert.h>
 #include <stdint.h>
-#include "gemv.h"
+#include "mm.h"
 #include <stdlib.h>
 #include <time.h>
 
 #ifndef DPU_BINARY
-#define DPU_BINARY "gemv_kernel"
+#define DPU_BINARY "mm_kernel"
 #endif
 
 void print(T* addr, unsigned row, unsigned col) {

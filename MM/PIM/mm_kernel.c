@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <mram.h>
-#include "gemv.h"
+#include "mm.h"
 #include <defs.h>
 #include <alloc.h>
 #include <barrier.h>
